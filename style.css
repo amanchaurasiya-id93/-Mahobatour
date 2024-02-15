@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: black;
+}
+
+nav {
+    height: 60px;
+    background-image: linear-gradient(to right,rgb(15, 14, 14),rgb(105, 99, 99),rgb(17, 17, 17));
+    width: 100%;
+}
+
+.change {
+    position: relative;
+    right: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    position: relative;
+    top: 12px;
+    left: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+
+.change {
+    position: relative;
+    left: -14px;
+    height: 50px;
+}
+
+.moon {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    right: 407px;
+}
+
+li a:hover {
+    border-radius: 10px;
+    text-decoration: underline;
+    color: gray;
+}
+
+span {
+    float: right;
+    position: relative;
+    top: 15px;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border: 2px solid rgb(95, 92, 92);
+    border-radius: 6px;
+    color: black;
+    cursor: context-menu;
+    outline: none;
+}
+
+#search {
+    background-color: whitesmoke;
+    font-size: 17px;
+    padding-left: 7px;
+
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/* button:hover {
+    height: 32px;
+    width: 87px;
+    background-color: blue;
+    filter: drop-shadow(0px 0px 5px white);
+    transition: all 0.2s ease-out;
+} */
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 1px 3px white;
+    cursor: context-menu;
+}
+
+.box {
+    height: 750px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 10px rgb(247, 244, 244);
+    animation: slider 16s infinite linear;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(img/Mahoba\ Sun\ Temple.webp);
+        background-position: center;
+    }
+
+    25% {
+        filter: saturate(1);
+        background-position: center;
+        background-image: url(img/Mahoba\ Khakhramath.jpeg);
+    }
+
+    50% {
+        background-position: center;
+        background-image: url(img/Mahoba\ Madan\ sagar.jpeg);
+    }
+
+    75% {
+        background-position: center;
+        background-image: url(img/Mahoba\ Alha\ Manch.jpeg);
+    }
+
+    100% {
+        background-position: cover;
+        background-image: url(img/Mahoba\ Vijay\ sagar.jpg);
+    }
+
+}
+
+.c1 {
+    background-image: linear-gradient(to right, rgb(94, 92, 92), white, rgb(59, 56, 56));
+    display: flex;
+    width: 100%;
+    height: 450px;
+
+}
+
+.c2 {
+    background-image: linear-gradient(to right, rgb(94, 92, 92), white, rgb(59, 56, 56));
+    display: flex;
+    width: 100%;
+    height: 450px;
+
+
+}
+
+.sun {
+    height: 394px;
+    width: 586px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    position: relative;
+    top: 31px;
+    left: 128px;
+    cursor: pointer;
+}
+
+.y1 {
+    position: relative;
+    bottom: 36px;
+}
+
+.khakhramath {
+    height: 394px;
+    width: 586px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    position: relative;
+    top: 29px;
+    left: 65px;
+    cursor: pointer;
+}
+
+.khakhramath:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    border-radius: 50% 20%;
+    transition: all 0.7s ease;
+}
+
+.sun:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+    border-radius: 50% 20%;
+    transition: all 0.7s ease;
+
+}
+
+.a1 {
+    position: relative;
+    left: 139px;
+    font-size: 29px;
+
+}
+
+
+p {
+    text-align: left;
+    font-size: 29px;
+    height: 250px;
+    width: 790px;
+    position: relative;
+    top: 19px;
+    left: 47px;
+    text-shadow: 0px 0px 2px black;
+    cursor: default;
+
+}
+
+p::first-letter {
+    font-size: 34px;
+    color: red;
+    font-family: cursive;
+}
+
+p::selection {
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.card {
+    /* position: fixed; */
+    height: 400px;
+    width: 270px;
+    border: 2px solid white;
+    border-radius: 6px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 12px aliceblue;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(238, 56, 238), #fff, #000);
+}
+
+.card:hover {
+    cursor: pointer;
+    /* height: 405px;
+    width: 274px; */
+    transition: all 0.5s ease;
+    transform: scale(1.03);
+
+}
+
+
+
+.hd1 {
+    height: 290px;
+    border-radius: 6px;
+    width: 270px;
+    filter: saturate(3)
+}
+
+.z2 a img {
+    height: 53px;
+    width: 57px;
+    padding-right: 2px;
+
+}
+
+.z3 a img {
+    height: 36px;
+    width: 37px;
+
+
+}
+
+.r1 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    top: 23px;
+}
+
+.ac2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.j2 {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    left: 1px;
+    font-size: 28px;
+    text-shadow: 0px 0px 1px white;
+
+}
+
+.j2::selection {
+    background-color: rgb(97, 124, 124);
+}
+
+.x1 {
+    height: 449px;
+    width: 1458px;
+    position: relative;
+    left: 34px;
+    background-image: linear-gradient(to right, #000, #615858, #000);
+    font-family: 'Dancing Script', cursive;
+    top: 18px;
+    box-shadow: 0px 0px 4px white;
+    border-radius: 8px;
+}
+
+.k1 {
+    float: right;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 167px;
+    right: 41px;
+}
+
+.t1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0px 1px 3px white;
+    cursor: context-menu;
+    position: relative;
+    top: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t2 {
+    height: 750px;
+    width: 93%;
+    position: relative;
+    top: 64px;
+    left: 55px;
+    border-radius: 4px;
+    border-color: azure;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px white;
+}
+
+.i1 {
+    background-image: url(img1/Alha\ chok.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(3);
+
+}
+
+.i2 {
+    background-image: url(img1/images\ \(6\).jpeg);
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i3 {
+    background-image: url(img1/mahoba\ hanuman\ mandir1\ image.jpg);
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i4 {
+    filter: saturate(3);
+    background-image: url(img1/madan\ sagar\ bridge.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i5 {
+    background-image: url(img1/saraswati\ vidya\ mandir\ 1\ image.jpeg);
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i6 {
+    background-image: url(img1/rail\ way\ station\ image.jpeg);
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i7 {
+    background-image: url(img1/ramkund1\ image.jpeg);
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i8 {
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-image: url(img1/udal\ chok.jpg);
+    background-repeat: no-repeat;
+}
+
+.i9 {
+    background-size: cover;
+    filter: saturate(3);
+    background-image: url(img1/mahoba\ kirat\ sagar\ boating\ image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i10 {
+    background-size: cover;
+    background-image: url(img1/mahoba\ image3.jpeg);
+    filter: saturate(3);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i11 {
+    background-image: url(img1/veer\ alha\ and\ udal.jpeg);
+    filter: saturate(3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i12 {
+    filter: saturate(3);
+    background-image: url(img1/mahoba\ shiv\ tandav\ image.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: saturate(4);
+    background-repeat: no-repeat;
+}
+
+.dibba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    position: relative;
+    top: 48px;
+    align-items: center;
+}
+
+.k8 {
+    height: 64px;
+    width: 960px;
+    margin-top: 40px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    outline: none;
+}
+
+#mytext {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+#email {
+    color: black;
+    padding-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+#email::selection {
+    background-color: blanchedalmond
+}
+
+#mytext::selection {
+    background-color: blanchedalmond
+}
+
+#mynumber::selection {
+    background-color: blanchedalmond
+}
+
+#area::selection {
+    background-color: blanchedalmond
+}
+
+#mynumber {
+    padding-left: 10px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#area {
+    color: black;
+    padding-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.k8::placeholder {
+    color: rgb(122, 118, 118);
+    position: relative;
+    left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.b5 {
+    height: 64px;
+    width: 150px;
+    margin-top: 40px;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+
+}
+
+.b5:hover {
+    height: 64px;
+    width: 150px;
+    color: #000;
+    background-color: gray;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0px 1px 3px white;
+    cursor: context-menu;
+    position: relative;
+    top: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container5 {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+    color: black;
+    font-size: 25px;
+    position: relative;
+    top: 42px;
+
+}
+
+.container6 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 11px;
+    align-items: center;
+}
+
+.container6 a {
+    font-size: 22px;
+    padding-left: 23px;
+}
+
+.container8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 23px; */
+}
+
+.container8 img {
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.f9 {
+    background: blanchedalmond;
+    position: relative;
+    top: 88px;
+    height: 253px;
+}
+
+.z1 a img:hover {
+    transform: scale(1.07);
+}
+
+.z2 a img:hover {
+    transform: scale(1.07);
+}
+
+.z3 a img:hover {
+    transform: scale(1.07);
+}
